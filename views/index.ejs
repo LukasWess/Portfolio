@@ -2,10 +2,18 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <%- include("partials/head") -%>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <div class="mainWrapper">
+      <div class="h1Wrapprer">
+        <h1 class="myHeading">
+          Hello, my name is Lukas and Welcome to my portifolio page. Come with
+          me and let me show you my work.
+      </div>
+    </div>
+    <%- include("partials/script") -%>
   </body>
 </html>
+
