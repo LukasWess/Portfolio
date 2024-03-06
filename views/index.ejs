@@ -5,14 +5,8 @@
     <title><%= title %></title>
   </head>
   <body>
-    <div class="mainWrapper">
-      <div class="h1Wrapprer">
-        <h1 class="myHeading">
-          Hello, my name is Lukas and Welcome to my portifolio page. Come with
-          me and let me show you my work.
-        </h1>
-      </div>
-    </div>
+    <%- include('./partials/navbar.ejs') %>
+    <%- include('./partials/index.ejs') %>
   </body>
   <%- include('./partials/script.ejs') %>
 </html>
