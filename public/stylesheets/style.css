@@ -8,16 +8,29 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
+
+.drop {
+  position: absolute;
+  top: 0;
+  color: lime;
+  opacity: 0.5;
+  font-family: monospace;
+  animation: fall linear infinite;
+}
+@keyframes fall {
+  0% { top: -25%; }
+  100% { top: 100%; }
+}
+
 .nav .nav-link {
   color: whitesmoke;
 }
 
 .nav .nav-link.active {
   background-color: #023653 !important;
-
 }
-
 
 a {
   color: whitesmoke;
@@ -27,6 +40,3 @@ a {
   margin-top: 100px;
 }
 
-.btn {
-  
-}
