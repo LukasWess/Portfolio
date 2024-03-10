@@ -3,7 +3,21 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: black;
   color: whitesmoke;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+.nav .nav-link {
+  color: whitesmoke;
+}
+
+.nav .nav-link.active {
+  background-color: #023653 !important;
+
+}
+
 
 a {
   color: whitesmoke;
@@ -11,4 +25,8 @@ a {
 
 .large-margin-top {
   margin-top: 100px;
+}
+
+.btn {
+  
 }
